@@ -25,6 +25,7 @@ export class SidemenuComponent {
 
   setThemeColor(color: string):void{
     this.theme = color;
+    
   }
 
   setSizeMenu(){

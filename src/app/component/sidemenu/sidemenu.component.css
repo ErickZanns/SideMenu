@@ -17,6 +17,9 @@
     /* Sombra más pronunciada */
     transition: box-shadow 0.3s ease-in-out;
     /* Transición suave para la sombra */
+    border: 5px solid;
+    /* Borde colorido */
+    border-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet) 1;
 }
 
 .sidemenu-container:hover {
@@ -34,11 +37,13 @@
     gap: 15px;
     width: 100%;
     border-bottom: 1px solid rgba(197, 70, 70, 0.1);
-    transition: transform 0.3s ease; /* Suaviza la transición de movimiento */
+    transition: transform 0.3s ease;
+    /* Suaviza la transición de movimiento */
 }
 
 .item:hover {
-    animation: bounce 2s; /* Rebote más corto al pasar el mouse */
+    animation: bounce 2s;
+    /* Rebote más corto al pasar el mouse */
 }
 
 /* Imagen del perfil */
@@ -80,6 +85,7 @@ button:hover {
 
 /* Botón de menú */
 .btn1 {
+    transform: translateX(-100%);
     background-color: #1abc9c;
     color: white;
     padding: 10px 20px;
@@ -105,35 +111,36 @@ button:hover {
     border-radius: 5px;
     transition: background-color 0.3s, transform 0.3s;
     text-align: center;
-    margin-left: auto; /* Empuja el botón hacia el final */
+    margin-left: auto;
+    /* Empuja el botón hacia el final */
     padding: 10px 20px;
     border: none;
     cursor: pointer;
 }
 
 @keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
         transform: translateY(0);
     }
+
     40% {
-        transform: translateY(-20px); /* Rebote hacia arriba */
+        transform: translateY(-20px);
+        /* Rebote hacia arriba */
     }
+
     60% {
-        transform: translateY(-10px); /* Rebote hacia abajo */
+        transform: translateY(-10px);
+        /* Rebote hacia abajo */
     }
 }
 
-.exercise-container h2 {
-    color: #1f75ca;
-}
-
-.exercise-container p {
-    color: #333;
-    font-size: 18px;
-}
-
-.exercise-container {
-    width: 50%;
+.ejercicio2 {
+    width: 100%;
     height: 100vh;
     background-color: #f0f0f0;
     display: flex;
@@ -144,13 +151,20 @@ button:hover {
     font-family: 'Trebuchet MS', Arial, sans-serif;
     border-radius: 20px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    color: #333;
+    font-size: 18px;
+    border: 5px solid;
+    border-image: linear-gradient(to right rgb(21, 233, 222), rgb(138, 6, 233), rgb(37, 72, 230)) 1;
+    font-size: 3rem;
+    color: rgba(0, 0, 0, 0.233);
 }
 
 .sidemenu-container:hover {
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
 }
 
-.container {
+.main-div {
     display: flex;
+    width: 100vw;
     height: 100vh;
 }
