@@ -1,0 +1,31 @@
+<button class="btn1" (click)="setVisibilitiMenu()">Menu</button>
+
+<div class="sidemenu-container"
+     [style.backgroundColor]="theme"
+     [style.width]="widthMenu + '%'"
+     [style.display]="visibleMenu ? 'flex' : 'none'">
+    <div class="item profile-section">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLcO_-2j_n9AjpUEtSwFDjI5lIptzE16YHhA&s" alt="Perfil.png">
+        <p>{{userName}}</p>
+        <button class="back-btn" (click)="setVisibilitiMenu()">Back</button>
+    </div>
+
+    <div class="item">
+        <p><span>📅</span>Dashboard</p>
+    </div>
+
+    <div class="item">
+        <p><span>😉</span>Profile</p>
+    </div>
+
+    <div class="item">
+        <button class="btn" (click)="setThemeColor('red')">Change Color</button>
+        <button class="btn" (click)="setSizeMenu()">Change Size</button>
+    </div>
+
+    <div class="exercise-container">
+        <!-- Contenido del ejercicio dos -->
+        <h2>Ejercicio Dos</h2>
+        <p>Este es el contenedor de ejercicio dos, ocupando la mitad derecha de la pantalla.</p>
+    </div>
+</div>
